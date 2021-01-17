@@ -2,8 +2,8 @@ import {Schema, model} from 'mongoose'
 
 const videoSchema = new Schema ({
     title: {
-        type: String,
         required: true,
+        type: String,
         trim: true
     },
     description: {
@@ -11,8 +11,8 @@ const videoSchema = new Schema ({
         trim: true
     },
     url:{
-        type: String,
         required: true,
+        type: String,
         trim: true,
         unique: true,
     }
